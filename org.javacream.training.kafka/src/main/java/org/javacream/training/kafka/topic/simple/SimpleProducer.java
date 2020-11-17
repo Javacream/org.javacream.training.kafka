@@ -15,10 +15,12 @@ public class SimpleProducer {
 		props.put("bootstrap.servers", Configuration.BOOTSTRAP_SERVERS);
 		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-
+		props.put("acks", "all"); 
+		props.put("retries", "3");
+		props.put("max.in.flight.requests.per.connection", "1");
 		Producer<String, String> producer = new KafkaProducer<String, String>(props);
 
-		ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>("helloworld", null,
+		ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>("sawitzki", null,
 				"a simple message");
 
 		producer.send(producerRecord);
