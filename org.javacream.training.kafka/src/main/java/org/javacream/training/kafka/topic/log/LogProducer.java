@@ -15,14 +15,15 @@ public class LogProducer {
 		props.put("bootstrap.servers", Configuration.BOOTSTRAP_SERVERS);
 		props.put("key.serializer", "org.javacream.training.kafka.topic.log.LogMessageKeySerde");
 		props.put("value.serializer", "org.javacream.training.kafka.topic.log.LogMessageValueSerde");
-		props.put("acks", "all"); 
+		props.put("acks", "all");
 		props.put("retries", "3");
 		props.put("max.in.flight.requests.per.connection", "1");
+		props.put("partitioner.class", LogPartitioner.class.getName());
 		Producer<LogMessage, LogMessage> producer = new KafkaProducer<>(props);
 
 		LogMessage lm = new LogMessage("CRITICAL", "a critical message");
-		ProducerRecord<LogMessage, LogMessage> producerRecord = new ProducerRecord<LogMessage, LogMessage>("sawitzki", lm,
-				lm);
+		ProducerRecord<LogMessage, LogMessage> producerRecord = new ProducerRecord<LogMessage, LogMessage>("sawitzki",
+				lm, lm);
 
 		producer.send(producerRecord);
 
