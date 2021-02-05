@@ -21,7 +21,7 @@ public class LogProducer {
 		props.put("partitioner.class", LogPartitioner.class.getName());
 		Producer<LogMessage, LogMessage> producer = new KafkaProducer<>(props);
 
-		LogMessage lm = new LogMessage("CITICAL", "a critical message");
+		LogMessage lm = new LogMessage("WARN", "a warn message");
 		ProducerRecord<LogMessage, LogMessage> producerRecord = new ProducerRecord<LogMessage, LogMessage>("logs_sawitzki",
 				lm, lm);
 
