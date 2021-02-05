@@ -17,3 +17,5 @@ spring:
         bootstrap-servers: h2908727.stratoserver.net:9092
         key-serializer: org.javacream.training.kafka.spring.log.LogMessageKeySerde
         value-serializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
+        properties:
+            partitioner-class: org.javacream.training.kafka.spring.log.LogPartitioner
