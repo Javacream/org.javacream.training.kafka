@@ -10,7 +10,7 @@ services:
       - "9092:9092"
       - "9192:9192"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: h2908727.stratoserver.net 
+      KAFKA_ADVERTISED_HOST_NAME: ${HOST_NAME} 
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_JMX_OPTS: -javaagent:./jolokia-agent.jar=port=9192,host=kafka1
     volumes:
@@ -21,7 +21,7 @@ services:
       - "9093:9092"
       - "9193:9192"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: h2908727.stratoserver.net 
+      KAFKA_ADVERTISED_HOST_NAME: ${HOST_NAME} 
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_JMX_OPTS: -javaagent:./jolokia-agent.jar=port=9192,host=kafka2
     volumes:
@@ -32,8 +32,21 @@ services:
      - "9094:9092"
      - "9194:9192"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: h2908727.stratoserver.net 
+      KAFKA_ADVERTISED_HOST_NAME: ${HOST_NAME} 
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_JMX_OPTS: -javaagent:./jolokia-agent.jar=port=9192,host=kafka3
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest 
+    ports: 
+      - 9000:9000
+    environment:
+      KAFKA_BROKERCONNECT: ${HOST_NAME}:9092
+      JVM_OPTS: -Xms32M -Xmx64M
+      SERVER_SERVLET_CONTEXTPATH: /
+  hawtio:
+    image: javacream/hawtio:1.0
+    ports:
+      - 8080:8080
+
