@@ -21,6 +21,10 @@
 
 * https://rdweb.integrata-cegos.de/rdweb/webclient
 * Anmelden mit student_m040X@integrata-cegos.de, X=zugeteilte Nummer, Passwort wird im Kurs mitgeteilt
+  * D = 2
+  * H = 3
+  * L = 4
+  * W = 5
 * Anschließend als Resource die WIndows-Maschine wählen
 * Anmelden dann mit "Anderer Benutzer" und dann w8admin, Passwort wird im Kurs mitgeteilt
 
