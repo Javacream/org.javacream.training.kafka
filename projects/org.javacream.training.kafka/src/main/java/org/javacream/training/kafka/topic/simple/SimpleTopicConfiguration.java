@@ -9,7 +9,7 @@ import org.javacream.training.kafka.Configuration;
 public abstract class SimpleTopicConfiguration {
 	public static final Properties PRODUCER;
 	public static final Properties CONSUMER;
-	public static final String TOPIC = "simple_topic";
+	public static final String TOPIC = "simple";
 	static {
 
 		PRODUCER = new Properties();
@@ -20,7 +20,7 @@ public abstract class SimpleTopicConfiguration {
 		PRODUCER.put("retries", "3");
 		PRODUCER.put("max.in.flight.requests.per.connection", "1");
 
-		final String GROUP_ID = "simple";
+		final String GROUP_ID = "simple2";
 		CONSUMER = new Properties();
 		CONSUMER.put("bootstrap.servers", Configuration.BootstrapServers.REMOTE.getServers());
 		CONSUMER.put("group.id", GROUP_ID);

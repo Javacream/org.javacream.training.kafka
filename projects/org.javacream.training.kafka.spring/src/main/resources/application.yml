@@ -8,13 +8,13 @@ management:
 spring:
    kafka:
      consumer:
-        bootstrap-servers: h2908727.stratoserver.net:9092
+        bootstrap-servers: 10.28.4.41:9092
         group-id: group_id
         auto-offset-reset: earliest
         key-deserializer: org.javacream.training.kafka.spring.log.LogMessageKeySerde
         value-deserializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
      producer:
-        bootstrap-servers: h2908727.stratoserver.net:9092
+        bootstrap-servers: 10.28.4.41:9092
         key-serializer: org.javacream.training.kafka.spring.log.LogMessageKeySerde
         value-serializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
         properties:

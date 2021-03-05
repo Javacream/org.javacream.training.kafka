@@ -14,6 +14,7 @@ public class SimpleLogWebService {
 
 	@PostMapping(path="kafka/log/{level}/{message}")
 	public void sendMessageToKafkaTopic(@PathVariable("level") String level, @PathVariable("message") String message) {
-		kafkaTemplate.send("logs_sawitzki", new LogMessage(level, message));
+		LogMessage logMessage = new LogMessage(level, message);
+		kafkaTemplate.send("simple", logMessage, logMessage);
 	}
 }
