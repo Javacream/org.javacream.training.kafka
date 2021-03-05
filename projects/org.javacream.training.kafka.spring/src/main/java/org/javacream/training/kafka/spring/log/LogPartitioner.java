@@ -22,7 +22,7 @@ public class LogPartitioner implements Partitioner {
         final int criticalPartition = partitionSize - 1;
         final int partitionCount = partitionSize- 1;
 
-        final String key = ((LogMessage) objectKey).getLevel();
+        final String key = ((LogMessageValue) objectKey).getLevel();
         int count;
         if (key.contains("CRITICAL")) { 
             count = criticalPartition;

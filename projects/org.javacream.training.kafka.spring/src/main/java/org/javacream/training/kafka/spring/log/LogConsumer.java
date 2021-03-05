@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class LogConsumer {
 
 	@KafkaListener(id = "non_critical", topicPartitions = {@TopicPartition(topic = "simple", partitions = {"0", "1"})})
-	public void listen1(List<LogMessage> logMessages) throws IOException {
+	public void listen1(List<LogMessageValue> logMessages) throws IOException {
 			logMessages.forEach(message -> System.out.println("NON_CRITICAL: " + message));
 	}
 }

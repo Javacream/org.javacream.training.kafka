@@ -1,20 +1,22 @@
 package org.javacream.training.kafka.spring.log;
 
 import java.util.Map;
+import java.util.StringTokenizer;
 
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serializer;
 
-public class LogMessageValueSerde implements Serializer<LogMessage>, Deserializer<LogMessage> {
+public class LogMessageValueSerde implements Serializer<LogMessageValue>, Deserializer<LogMessageValue> {
 
 	@Override
-	public LogMessage deserialize(String topic, byte[] data) {
-		return new LogMessage("", new String(data));
+	public LogMessageValue deserialize(String topic, byte[] data) {
+		StringTokenizer stringTokenizer = new StringTokenizer(new String(data), "=");
+		return new LogMessageValue(stringTokenizer.nextToken(), stringTokenizer.nextToken());
 	}
 
 	@Override
-	public byte[] serialize(String topic, LogMessage data) {
-		return data.getMessage().getBytes();
+	public byte[] serialize(String topic, LogMessageValue data) {
+		return (data.getLevel()+"="+data.getMessage()).getBytes();
 	}
 
 	@Override

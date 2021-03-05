@@ -18,4 +18,4 @@ spring:
         key-serializer: org.javacream.training.kafka.spring.log.LogMessageKeySerde
         value-serializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
         properties:
-            partitioner-class: org.javacream.training.kafka.spring.log.LogPartitioner
+            partitioner.class: org.javacream.training.kafka.spring.log.LogPartitioner
