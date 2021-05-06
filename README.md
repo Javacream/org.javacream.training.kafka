@@ -1,6 +1,6 @@
  org.javacream.training.kafka
 
-## Durchführung des Seminars vom 4.-5.2.2021
+## Durchführung des Seminars vom 6.-7.5.2021
 
 * Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
