@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LogConsumerForCritical {
 
-@KafkaListener(id = "log_sawitzki", topicPartitions = {@TopicPartition(topic = "logs_sawitzki", partitions = "2")})
+@KafkaListener(id = "log_sawitzkicritical", topicPartitions = {@TopicPartition(topic = "logs_sawitzki", partitions = "2")})
 	public void listen1(List<LogMessage> logMessages) throws IOException {
 			logMessages.forEach(System.out::println);
 	}

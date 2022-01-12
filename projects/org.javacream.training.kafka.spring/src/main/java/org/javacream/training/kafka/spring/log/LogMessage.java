@@ -1,6 +1,12 @@
 package org.javacream.training.kafka.spring.log;
 
-public class LogMessage {
+import java.io.Serializable;
+
+public class LogMessage implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String level;
 	private String message;
 	@Override

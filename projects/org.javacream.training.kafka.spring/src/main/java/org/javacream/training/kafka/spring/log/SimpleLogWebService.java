@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SimpleLogWebService {
-
 	@Autowired
-	private KafkaTemplate<LogMessage, LogMessage> kafkaTemplate;
+	private KafkaTemplate<String, LogMessage> kafkaTemplate;
 
 	@PostMapping(path="kafka/log/{level}/{message}")
 	public void sendMessageToKafkaTopic(@PathVariable("level") String level, @PathVariable("message") String message) {
-		kafkaTemplate.send("logs_sawitzki", new LogMessage(level, message));
+		kafkaTemplate.send("logs_sawitzki", level, new LogMessage(level, message));
 	}
 }

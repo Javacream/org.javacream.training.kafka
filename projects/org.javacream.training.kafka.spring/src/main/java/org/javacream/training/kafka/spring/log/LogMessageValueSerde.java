@@ -2,6 +2,7 @@ package org.javacream.training.kafka.spring.log;
 
 import java.util.Map;
 
+import org.apache.commons.lang3.SerializationUtils;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serializer;
 
@@ -9,12 +10,12 @@ public class LogMessageValueSerde implements Serializer<LogMessage>, Deserialize
 
 	@Override
 	public LogMessage deserialize(String topic, byte[] data) {
-		return new LogMessage("", new String(data));
+		return SerializationUtils.deserialize(data);
 	}
 
 	@Override
 	public byte[] serialize(String topic, LogMessage data) {
-		return data.getMessage().getBytes();
+		return SerializationUtils.serialize(data);
 	}
 
 	@Override
