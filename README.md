@@ -1,15 +1,13 @@
  org.javacream.training.kafka
 
-## Durchführung des Seminars vom 11.-12.1.2022
-
 * Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
 * Beispiele
   * https://github.com/Javacream/org.javacream.training.kafka
-    *  Branch telekom_11.1.2022
+    *  Branch integrata_14.2.2022
     
 * Digitales Flipchart
-  * https://docs.google.com/presentation/d/1VEclfN2LAFrppzod9XMA8n7KKYjDPjrQeZxmBu4SA6I/edit?usp=sharing
+  * https://docs.google.com/presentation/d/1Ouic8GwL7LeUOO6WWkUBqRMfa7iVPqeqz8d50vpTz88/edit?usp=sharing
 
 * Seminarzeiten
   * 8 Unterrichtseinheiten mit jeweils 90 Minuten
