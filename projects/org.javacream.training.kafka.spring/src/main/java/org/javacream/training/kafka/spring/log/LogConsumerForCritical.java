@@ -12,6 +12,7 @@ public class LogConsumerForCritical {
 
 @KafkaListener(id = "log_sawitzkicritical", topicPartitions = {@TopicPartition(topic = "logs_sawitzki", partitions = "2")})
 	public void listen1(List<LogMessage> logMessages) throws IOException {
+			System.out.print("\"CRITICAL: \" + ");
 			logMessages.forEach(System.out::println);
 	}
 }

@@ -9,7 +9,7 @@ import org.javacream.training.kafka.Configuration;
 public abstract class SimpleTopicConfiguration {
 	public static final Properties PRODUCER;
 	public static final Properties CONSUMER;
-	public static final String TOPIC = "simple_topic";
+	public static final String TOPIC = "repl_demo";
 	static {
 
 		PRODUCER = new Properties();

@@ -1,0 +1,3 @@
+FROM openjdk:8-alpine
+COPY hawtio-app-2.12.1.jar ./hawtio.jar
+CMD java -Dhawtio.proxyAllowlist=* -jar hawtio.jar
