@@ -9,7 +9,7 @@
     *  Branch telekom_11.1.2022
     
 * Digitales Flipchart
-  * https://docs.google.com/presentation/d/1VEclfN2LAFrppzod9XMA8n7KKYjDPjrQeZxmBu4SA6I/edit?usp=sharing
+  * https://docs.google.com/presentation/d/1_8-DD8mQDbkSXD2Ur9uhvQ91E2WIBZ9cXzfjGIfOlX4/edit?usp=sharing
 
 * Seminarzeiten
   * 8 Unterrichtseinheiten mit jeweils 90 Minuten
