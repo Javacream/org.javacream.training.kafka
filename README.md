@@ -1,12 +1,8 @@
  org.javacream.training.kafka
-
-## Durchführung des Seminars vom 11.-12.1.2022
-
 * Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
 * Beispiele
   * https://github.com/Javacream/org.javacream.training.kafka
-    *  Branch telekom_11.1.2022
     
 * Digitales Flipchart
   * https://docs.google.com/presentation/d/1_8-DD8mQDbkSXD2Ur9uhvQ91E2WIBZ9cXzfjGIfOlX4/edit?usp=sharing
