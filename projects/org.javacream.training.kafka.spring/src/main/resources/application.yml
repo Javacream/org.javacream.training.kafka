@@ -1,0 +1,23 @@
+server: 
+   port: 9000
+management:
+   endpoints:
+       web:
+           exposure:
+               include: health,jolokia
+spring:
+  kafka:
+    bootstrap-servers: h2908727.stratoserver.net:9092
+    producer:    
+      retries: 0
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
+      properties:
+        partitioner.class: org.javacream.training.kafka.spring.log.LogPartitioner
+    consumer:
+      group-id: TRAINING
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.javacream.training.kafka.spring.log.LogMessageValueSerde
+
