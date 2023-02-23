@@ -10,9 +10,14 @@ javacream.training.kafka
 
 * Seminarzeiten
   * 8 Unterrichtseinheiten mit jeweils 90 Minuten
-  * jeweils 9:00 - 16:15
-  * Mittagspause 45’ (12:15-13:00)
-  * Kaffeepausen 10:30 - 10:45 und 14:30 - 14:45
+  * Donnerstag
+    * 9:00 - 16:15
+    * Mittagspause 45’ (12:15-13:00)
+    * Kaffeepausen 10:30 - 10:45 und 14:30 - 14:45
+  * Freitag
+    * __8:15 - 15:30__
+    * Mittagspause 45’ (11:45-12:30)
+    * Kaffeepausen 10:00 - 10:15 und 14:00 - 14:15
   
 ## Kafka Server
 
