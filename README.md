@@ -1,18 +1,14 @@
  org.javacream.training.kafka
-* Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
+* Rainer Sawitzki
+* eMail: training@rainer-sawitzki.de
+* [Javacream](javacream.org)  
 
-* Beispiele
-  * https://github.com/Javacream/org.javacream.training.kafka
-    
-* Digitales Flipchart
-  * https://docs.google.com/presentation/d/1_8-DD8mQDbkSXD2Ur9uhvQ91E2WIBZ9cXzfjGIfOlX4/edit?usp=sharing
+* [Digitales Flipchart](https://docs.google.com/presentation/d/1Gr1Ee5il09IXypfO_ux47GALM1btBzGk8MY-jsRfC-A/edit?usp=sharing)
 
 * Seminarzeiten
   * 8 Unterrichtseinheiten mit jeweils 90 Minuten
-  * jeweils 9:00 - 16:15
+  * Donnerstag 10:00 - 17:00
+  * Freitag 9:00 - 16:15
   * Mittagspause 45’ (12:15-13:00)
-  * Kaffeepausen 10:30 - 10:45 und 14:30 - 14:45
+  * Kaffeepausen 10:30 - 10:45 (nicht Donnerstag) und 14:30 - 14:45
   
-## Kafka Server
-
-h2908727.stratoserver.net
