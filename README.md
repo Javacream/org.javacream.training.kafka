@@ -1,6 +1,6 @@
  org.javacream.training.kafka
 * Rainer Sawitzki
-* eMail: training@rainer-sawitzki.de
+* eMail: rainer.sawitzki@gmail.com
 * [Javacream](javacream.org)  
 
 * [Digitales Flipchart](https://docs.google.com/presentation/d/18sU8GHvuYwjmZghJ7TGQg9gH7Tc9grpY8f9pElBTX_Y/edit?usp=sharing)
