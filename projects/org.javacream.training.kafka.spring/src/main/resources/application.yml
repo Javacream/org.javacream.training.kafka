@@ -7,7 +7,7 @@ management:
                include: health,jolokia
 spring:
   kafka:
-    bootstrap-servers: h2908727.stratoserver.net:9092
+    bootstrap-servers: javacream.eu:9092
     producer:    
       retries: 0
       acks: all
