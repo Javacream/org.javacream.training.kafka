@@ -2,8 +2,7 @@
 
 ## Durchführung des Seminars vom 16.-17.7.2024
 
-* Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
-
+* Referent: Rainer Sawitzki, eMail: rainer.sawitzki@gmail.com
 * [Digitales Flipchart](https://docs.google.com/presentation/d/11sdZpXH9bxlTmEUczT-MLDqssFUvXSQUpGGgecN7BfQ/edit?usp=sharing)
 
 * Seminarzeiten
