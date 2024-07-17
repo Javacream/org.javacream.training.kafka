@@ -9,11 +9,11 @@ import org.javacream.training.kafka.Configuration;
 public abstract class SimpleTopicConfiguration {
 	public static final Properties PRODUCER;
 	public static final Properties CONSUMER;
-	public static final String TOPIC = "repl_demo";
+	public static final String TOPIC = "demo";
 	static {
 
 		PRODUCER = new Properties();
-		PRODUCER.put("bootstrap.servers", Configuration.BootstrapServers.REMOTE.getServers());
+		PRODUCER.put("bootstrap.servers", Configuration.BootstrapServers.LOCAL.getServers());
 		PRODUCER.put("key.serializer", StringSerializer.class.getName());
 		PRODUCER.put("value.serializer", StringSerializer.class.getName());
 		PRODUCER.put("acks", "all"); 
@@ -22,7 +22,7 @@ public abstract class SimpleTopicConfiguration {
 
 		final String GROUP_ID = "simple";
 		CONSUMER = new Properties();
-		CONSUMER.put("bootstrap.servers", Configuration.BootstrapServers.REMOTE.getServers());
+		CONSUMER.put("bootstrap.servers", Configuration.BootstrapServers.LOCAL.getServers());
 		CONSUMER.put("group.id", GROUP_ID);
 		CONSUMER.put("enable.auto.commit", "true");
 		CONSUMER.put("auto.commit.interval.ms", "1000");
