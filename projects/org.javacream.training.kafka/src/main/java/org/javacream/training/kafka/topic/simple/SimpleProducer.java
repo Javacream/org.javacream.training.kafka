@@ -13,7 +13,7 @@ public class SimpleProducer {
 		Properties producerProperties = SimpleTopicConfiguration.PRODUCER;
 		String topic = SimpleTopicConfiguration.TOPIC;
 		String key = null;
-		String value = "simple message";
+		String value = "another simple message";
 		Producer<String, String> producer = new KafkaProducer<String, String>(producerProperties);
 		ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>(topic, key, value);
 		producer.send(producerRecord);
