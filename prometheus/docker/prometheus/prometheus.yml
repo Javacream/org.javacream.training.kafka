@@ -12,17 +12,17 @@ scrape_configs:
   - job_name: 'broker1'
     scrape_interval: 5s
     static_configs:
-    - targets: ['10.160.1.50:9200']
+    - targets: ['javacream.eu:9200']
 
   - job_name: 'broker2'
     scrape_interval: 5s
     static_configs:
-    - targets: ['10.160.1.50:9201']
+    - targets: ['javacream.eu:9201']
 
   - job_name: 'broker3'
     scrape_interval: 5s
     static_configs:
-    - targets: ['10.160.1.50:9202']
+    - targets: ['javacream.eu:9202']
 
   - job_name: 'pushgateway'
     honor_labels: true
