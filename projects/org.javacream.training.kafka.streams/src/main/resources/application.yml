@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: kafka-streams-demo
+  kafka:
+    bootstrap-servers: javacream.eu:9092
+    streams:
+      application-id: demo-streams-app
+      properties:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        commit.interval.ms: 1000
+
+logging:
+  level:
+    org.apache.kafka.streams: INFO
+    com.example.streams: DEBUG
